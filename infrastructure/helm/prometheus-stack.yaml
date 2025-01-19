@@ -17,7 +17,7 @@ spec:
         prometheus:
           enabled: true
         crds:
-          enabled: false
+          enabled: true
         defaultRules:
           create: true
           rules:
