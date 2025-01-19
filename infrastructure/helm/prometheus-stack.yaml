@@ -15,9 +15,9 @@ spec:
         crds:
           enabled: true
         defaultRules:
-          create: true
+          create: false
           rules:
-            alertmanager: false
+            alertmanager: true
             etcd: true
             configReloaders: true
             general: true
