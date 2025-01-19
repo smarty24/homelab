@@ -10,7 +10,7 @@ spec:
       - https://github.com/prometheus-community/helm-charts
       - https://github.com/prometheus-operator/kube-prometheus
     chart: kube-prometheus-stack
-    version: 63.1.0
+    targetRevision: 63.1.0
   destination:
     server: https://kubernetes.default.svc
     namespace: monitoring
