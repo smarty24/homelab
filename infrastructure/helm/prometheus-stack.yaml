@@ -15,11 +15,11 @@ spec:
         alertmanager:
           enabled: false
         prometheus:
-          enabled: false
+          enabled: true
         crds:
           enabled: false
         defaultRules:
-          create: false
+          create: true
           rules:
             alertmanager: true
             etcd: true
