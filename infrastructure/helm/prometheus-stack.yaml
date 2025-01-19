@@ -15,7 +15,7 @@ spec:
       defaultRules:
         create: true
         rules:
-          alertmanager: false
+          alertmanager: true
           etcd: true
           configReloaders: true
           general: true
