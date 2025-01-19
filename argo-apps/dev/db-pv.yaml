@@ -10,4 +10,4 @@ spec:
   accessModes:
     - ReadWriteOnce
   hostPath:
-    path: "/home/postgres/pgdata"
+    path: "/tmp"
