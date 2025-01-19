@@ -10,7 +10,7 @@ spec:
     chart: kube-prometheus-stack
     targetRevision: 68.2.1
     helm:
-      releaseName: prometheus-stack
+      releaseName: monitoring
       values: |
         crds:
           enabled: true
