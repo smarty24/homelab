@@ -1,0 +1,26 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: acid-minimal-cluster
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/smarty24/homelab
+    targetRevision: HEAD
+    path: argo-apps/dev/
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: database
+  syncPolicy:
+    retry:
+      backoff:
+        duration: 5s
+        factor: 2
+        maxDuration: 3m0s
+      limit: 5
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
