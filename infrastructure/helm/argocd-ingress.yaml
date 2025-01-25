@@ -5,7 +5,7 @@ metadata:
     cert-manager.io/cluster-issuer: letsencrypt-staging
     ingress.kubernetes.io/ssl-redirect: "true"
   name: argocd
-  namespace: default
+  namespace: argocd
 spec:
   ingressClassName: nginx-internal
   rules:
