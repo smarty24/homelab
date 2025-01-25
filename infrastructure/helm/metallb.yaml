@@ -22,7 +22,7 @@ spec:
         maxDuration: 3m0s
       limit: 5
     automated:
-      prune: true
-      selfHeal: true
+      prune: false
+      selfHeal: false
     syncOptions:
       - CreateNamespace=true
