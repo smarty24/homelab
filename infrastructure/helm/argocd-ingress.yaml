@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-staging
+    ingress.kubernetes.io/ssl-redirect: "true"
+  name: argocd
+  namespace: default
+spec:
+  ingressClassName: nginx-internal
+  rules:
+    - host: argocd.k8s.koa-dev.dev
+      http:
+        paths:
+          - backend:
+              service:
+                name: argocd-repo-server
+                port:
+                  number: 443
+            path: /
+            pathType: Prefix
+  tls:
+    - hosts:
+        - argocd.k8s.koa-dev.dev
+      secretName: argocd-tls
