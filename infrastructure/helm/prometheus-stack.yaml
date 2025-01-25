@@ -13,7 +13,7 @@ spec:
       releaseName: monitoring
       values: |
         alertmanager:
-          enabled: false
+          enabled: true
         prometheus:
           enabled: true
         crds:
