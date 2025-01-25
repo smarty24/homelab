@@ -17,9 +17,6 @@ spec:
           ingress:
             enabled: true
             ingressClassName: nginx-internal
-            annotations:
-              kubernetes.io/ingress.class: nginx-internal
-              kubernetes.io/tls-acme: "true"
             hosts:
               - grafana.k8s.koa-dev.dev
             path: /
