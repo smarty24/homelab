@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://helm.nginx.com/stable
-    chart: nginx
+    chart: nginx/nginx-ingress
     targetRevision: 2.0.0
     helm:
       releaseName: nginx-ingress
