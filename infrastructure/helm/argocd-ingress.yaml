@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   annotations:
     cert-manager.io/cluster-issuer: letsencrypt-staging
-    ingress.kubernetes.io/force-ssl-redirect: "true"
+    # ingress.kubernetes.io/force-ssl-redirect: "true"
   name: argocd
   namespace: argocd
 spec:
