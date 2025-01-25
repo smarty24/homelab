@@ -13,13 +13,13 @@ spec:
       releaseName: monitoring
       values: |
         alertmanager:
-          enabled: true
+          enabled: false
         prometheus:
           enabled: true
         crds:
           enabled: true
         defaultRules:
-          create: true
+          create: false
           rules:
             alertmanager: true
             etcd: true
