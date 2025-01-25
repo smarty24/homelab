@@ -11,50 +11,6 @@ spec:
     targetRevision: 68.2.1
     helm:
       releaseName: monitoring
-      values: |
-        alertmanager:
-          enabled: false
-        prometheus:
-          enabled: true
-        crds:
-          enabled: true
-        defaultRules:
-          create: false
-          rules:
-            alertmanager: true
-            etcd: true
-            configReloaders: true
-            general: true
-            k8sContainerCpuUsageSecondsTotal: true
-            k8sContainerMemoryCache: true
-            k8sContainerMemoryRss: true
-            k8sContainerMemorySwap: true
-            k8sContainerResource: true
-            k8sContainerMemoryWorkingSetBytes: true
-            k8sPodOwner: true
-            kubeApiserverAvailability: true
-            kubeApiserverBurnrate: true
-            kubeApiserverHistogram: true
-            kubeApiserverSlos: true
-            kubeControllerManager: true
-            kubelet: true
-            kubeProxy: true
-            kubePrometheusGeneral: true
-            kubePrometheusNodeRecording: true
-            kubernetesApps: true
-            kubernetesResources: true
-            kubernetesStorage: true
-            kubernetesSystem: true
-            kubeSchedulerAlerting: true
-            kubeSchedulerRecording: true
-            kubeStateMetrics: true
-            network: true
-            node: true
-            nodeExporterAlerting: true
-            nodeExporterRecording: true
-            prometheus: true
-            prometheusOperator: true
-            windows: true
 
   destination:
     server: https://kubernetes.default.svc
