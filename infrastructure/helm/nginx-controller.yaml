@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/nginx/kubernetes-ingress/tree/v4.0.0/charts/nginx-ingress
+    repoURL: https://helm.nginx.com/stable/nginx
     chart: nginx
     targetRevision: 4.0.0
     helm:
