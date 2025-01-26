@@ -12,8 +12,14 @@ spec:
     helm:
       releaseName: monitoring
       values: |
+        defaultRules:
+          create: false
+        crds:
+          enabled: true
         alertmanager:
           enabled: false
+        prometheus:
+          enabled: true
         grafana:
           enabled: true
           ingress:
