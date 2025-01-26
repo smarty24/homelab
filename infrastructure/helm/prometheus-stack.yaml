@@ -12,6 +12,8 @@ spec:
     helm:
       releaseName: monitoring
       values: |
+        alertmanager:
+          enabled: false
         grafana:
           enabled: true
           ingress:
