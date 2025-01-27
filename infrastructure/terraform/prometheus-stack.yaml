@@ -13,11 +13,11 @@ spec:
       releaseName: monitoring
       values: |
         defaultRules:
-          create: false
+          create: true
         crds:
           enabled: true
         alertmanager:
-          enabled: false
+          enabled: true
         prometheus:
           enabled: true
         grafana:
