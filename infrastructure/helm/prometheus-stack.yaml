@@ -19,7 +19,7 @@ spec:
         alertmanager:
           enabled: false
         prometheus:
-          enabled: false
+          enabled: true
         grafana:
           enabled: true
           ingress:
